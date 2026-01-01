@@ -1,0 +1,22 @@
+// 2) Write a C program to input two integers and perform addition, subtraction, multiplication, division, and modulus. Display the results
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+
+    printf("Addition: %d\n", num1 + num2);
+    printf("Subtraction: %d\n", num1 - num2);
+    printf("Multiplication: %d\n", num1 * num2);
+    
+    if (num2 != 0) {
+        printf("Division: %d\n", num1 / num2);
+        printf("Modulus: %d\n", num1 % num2);
+    } else {
+        printf("Division and Modulus by zero is not allowed.\n");
+    }
+
+    return 0;
+}
